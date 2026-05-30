@@ -7,6 +7,8 @@ from api.v1.user.schema import (
 )
 from api.v1.user.service import create_user_service
 
+
+
 router = APIRouter(
     prefix="/api/v1/create",
     tags=["create"],
@@ -23,3 +25,5 @@ async def create_user(
     db: Session = Depends(get_db),
 ):
     return create_user_service(payload, db)
+
+

@@ -38,3 +38,4 @@ def create_user_service(
     db.refresh(new_user)
 
     return new_user
+
